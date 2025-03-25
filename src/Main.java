@@ -29,6 +29,11 @@ public class Main {
          list= sellerDao.finAll();
         for (Seller s:list){
             System.out.println(s);
+
         }
+        System.out.printf("====TEST 4 seller findbyId====\n");
+        Seller seller= new Seller(null, "greg","greg@gmail.com",new Date(),3000.0,dep);
+        sellerDao.insert(seller);
+        System.out.printf("Insert id:"+seller.getId()+"\n");
     }
 }
