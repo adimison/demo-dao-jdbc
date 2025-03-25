@@ -11,4 +11,5 @@ public interface SellerDao {
     void delete(Seller obj);
     Seller getById(Integer id);
     List<Seller> finAll();
+    List<Seller> finAllByDepartment(Department department);
 }
