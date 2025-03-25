@@ -10,10 +10,10 @@ import java.util.Date;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Department obj = new Department(1, "Books");
 
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
+        System.out.printf("====TEST 1 seller findbyId====\n");
         Seller seller= sellerDao.getById(3);
         System.out.println(seller);
     }
